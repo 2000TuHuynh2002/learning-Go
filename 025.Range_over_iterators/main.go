@@ -32,8 +32,8 @@ func (lst *List[T]) Push(v T) {
 func (lst *List[T]) All() iter.Seq[T] {
 	return func(yield func(T) bool) {
 		// The iterator function takes another function as a parameter, called `yield`
-		// by convention (but the name can be arbitrary). It will call `yield` for every 
-		// element we want to iterate over, and note yield’s return value for a potential 
+		// by convention (but the name can be arbitrary). It will call `yield` for every
+		// element we want to iterate over, and note yield’s return value for a potential
 		// early termination.
 		for e := lst.head; e != nil; e = e.next {
 			if !yield(e.val) {
@@ -70,14 +70,14 @@ func main() {
 		fmt.Println(e)
 	}
 
-	// Packages like `slices` have a number of useful functions to work with iterators. 
-	// For example, `Collect` takes any iterator and collects all its values into 
+	// Packages like `slices` have a number of useful functions to work with iterators.
+	// For example, `Collect` takes any iterator and collects all its values into
 	// a slice.
 	all := slices.Collect(lst.All())
 	fmt.Println("all:", all)
 
 	for n := range genFib() {
-		// Once the loop hits `break` or an early return, the `yield` function passed 
+		// Once the loop hits `break` or an early return, the `yield` function passed
 		// to the iterator will return `false`.
 		if n >= 10 {
 			break
