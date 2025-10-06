@@ -12,7 +12,7 @@ func f(from string) {
 }
 
 func main() {
-	// Suppose we have a function call `f(s)`. Here’s how we’d call that in the usual 
+	// Suppose we have a function call `f(s)`. Here’s how we’d call that in the usual
 	// way, running it synchronously.
 	f("direct")
 
@@ -25,7 +25,7 @@ func main() {
 		fmt.Println(msg)
 	}("going")
 
-	// Our two function calls are running asynchronously in separate goroutines now. 
+	// Our two function calls are running asynchronously in separate goroutines now.
 	// Wait for them to finish (for a more robust approach, use a `WaitGroup`).
 	time.Sleep(time.Second)
 	fmt.Println("done")
