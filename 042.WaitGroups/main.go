@@ -7,8 +7,7 @@ import (
 )
 
 // This is the function we’ll run in every goroutine.
-func worker(id int, wg *sync.WaitGroup) {
-	defer wg.Done() // Decrement the counter when the goroutine finishes
+func worker(id int) {
 	fmt.Printf("Worker %d starting\n", id)
 
 	// Sleep to simulate an expensive task.
@@ -24,8 +23,9 @@ func main() {
 
 	// Launch several goroutines using WaitGroup.Go
 	for i := 1; i <= 5; i++ {
-		wg.Add(1)
-		go worker(i, &wg)
+		wg.Go(func() {
+			worker(i)
+		})
 	}
 
 	// Block until all the goroutines started by `wg` are done. A goroutine is done
