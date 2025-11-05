@@ -20,6 +20,7 @@ func main() {
 		if n < 2 {
 			return n
 		}
+
 		// Since `fib` was previously declared in `main`, Go knows which function to
 		// call with `fib` here.
 		return fib(n-1) + fib(n-2)
