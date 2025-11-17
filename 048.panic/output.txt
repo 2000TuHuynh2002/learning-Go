@@ -1,0 +1,6 @@
+panic: a problem
+
+goroutine 1 [running]:
+main.main()
+  /.../048.panic/main.go:20 +0x89
+exit status 2
