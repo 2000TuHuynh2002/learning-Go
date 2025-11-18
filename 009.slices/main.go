@@ -13,8 +13,8 @@ func main() {
 
 	// To create a slice with non-zero length, use the builtin `make`. Here we make
 	// a slice of `strings` of length 3 (initially zero-valued). By default a new
-	// slice’s capacity is equal to its length; if we know the slice is going to
-	// grow ahead of time, it’s possible to pass a capacity explicitly as an additional
+	// slice’s capacity is equal to its length; if we know the slice is going to grow
+	// ahead of time, it’s possible to pass a capacity explicitly as an additional
 	// parameter to `make`.
 	s = make([]string, 3)
 	fmt.Println("emp:", s, "len:", len(s), "cap:", cap(s))

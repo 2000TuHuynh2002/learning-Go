@@ -21,7 +21,7 @@ func main() {
 	// by pointer.
 	var wg sync.WaitGroup
 
-	// Launch several goroutines using WaitGroup.Go
+	// Launch several goroutines using `WaitGroup.Go`.
 	for i := 1; i <= 5; i++ {
 		wg.Go(func() {
 			worker(i)
