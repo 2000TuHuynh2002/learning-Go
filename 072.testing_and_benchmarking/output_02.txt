@@ -1,0 +1,7 @@
+goos: windows
+goarch: amd64
+pkg: example/testing_and_benchmarking
+cpu: AMD Ryzen 9 5900HX with Radeon Graphics
+BenchmarkIntMin-16      774210031                1.538 ns/op
+PASS
+ok      example/testing_and_benchmarking        1.814s
