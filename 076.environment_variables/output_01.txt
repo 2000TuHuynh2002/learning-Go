@@ -1,0 +1,8 @@
+FOO: 1
+BAR: 
+
+TERM_PROGRAM
+PATH
+SHELL
+...
+FOO
