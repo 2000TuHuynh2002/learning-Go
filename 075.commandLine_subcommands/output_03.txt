@@ -1,0 +1,4 @@
+flag provided but not defined: -enable
+Usage of bar:
+  -level int
+        level

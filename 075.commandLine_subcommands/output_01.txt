@@ -1,0 +1,4 @@
+subcommand 'foo'
+  enable: true
+  name: joe
+  tail: [a1 a2]

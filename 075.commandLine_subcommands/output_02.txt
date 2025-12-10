@@ -1,0 +1,3 @@
+subcommand 'bar'
+  level: 8
+  tail: [a1]
