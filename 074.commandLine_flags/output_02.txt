@@ -1,0 +1,5 @@
+word: opt
+numb: 42
+fork: false
+svar: bar
+tail: []

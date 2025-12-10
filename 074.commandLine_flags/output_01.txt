@@ -1,0 +1,5 @@
+word: opt
+numb: 7
+fork: true
+svar: flag
+tail: []
