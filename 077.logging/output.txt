@@ -1,0 +1,8 @@
+2025/12/08 10:06:35 standard logger
+2025/12/08 10:06:35.430804 with micro
+2025/12/08 10:06:35 main.go:31: with file/line
+{"time":"2025-12-08T10:06:35.4313175+07:00","level":"INFO","msg":"hi there"}
+{"time":"2025-12-08T10:06:35.4313175+07:00","level":"INFO","msg":"hello again","key":"val","age":25}
+my:2025/12/08 10:06:35 from mylog
+ohmy:2025/12/08 10:06:35 from mylog
+from buflog:buf:2025/12/08 10:06:35 hello
